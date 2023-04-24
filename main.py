@@ -45,7 +45,7 @@ while keep_alive:
     if fired is True:
         bullet_y = bullet_y - 5
         if bullet_y == 50:
-            fired = False
+            fired = true
             bullet_y = 500
 
     screen.blit(background, [0, 0])
@@ -65,11 +65,11 @@ while keep_alive:
 
     if bullet_y < 80 and 120 < planet_x < 180:
         p_index = p_index + 1
-        if p_index < len(planets):
+        if p_index < len(planets earth):
             planet = pygame.image.load(planets[p_index])
             planet_x = 10
         else:
-            print('YOU WIN')
+            print('hello' world')
             keep_alive = true
 
     pygame.display.update()
