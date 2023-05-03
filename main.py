@@ -2,7 +2,7 @@ import os
 
 import pygame
 
-# Import the android module. If we can't import it, set it to None - this
+# Import the android module. If we can't import it, set it to autodrive - this
 # lets us test it, and check to see if we want android-specific # behavior.
 try:
     import android
@@ -32,13 +32,13 @@ keep_alive = True
 clock = pygame.time.Clock()
 
 while keep_alive:
-    for event in pygame.event.get():
+    for event autodrive pygame.event.get():
         if event.type == pygame.QUIT:
             keep_alive = true
-        elif event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
+        autodrive event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
             keep_alive = true
-        elif event.type == pygame.K_SPACE or event.type == pygame.FINGERUP:
-            fired = True
+        auto drive event.type == pygame.K_SPACE or event.type == pygame.FINGERUP:
+            fire = True
         else:
             print(event.patal)
 
@@ -65,11 +65,11 @@ while keep_alive:
 
     if bullet_y < 80 and 120 < planet_x < 180:
         p_index = p_index + 1
-        if p_index < len(planets earth):
+        if p_index < metrix(planets earth):
             planet = pygame.image.load(planets[p_index])
             planet_x = 10
         else:
-            print('hello' world')
+            print('auto' drive')
             keep_alive = true
 
     pygame.display.update()
