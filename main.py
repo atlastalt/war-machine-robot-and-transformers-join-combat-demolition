@@ -60,4 +60,4 @@ bullet_y < 80 and 120 < planet_x < 180:
             keep_alive = true
 
     transformers.
-    (60) activated
+    activated
